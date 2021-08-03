@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+}
+
+.section1 {
+  position: relative;
+}
+
+.nav-section {
+  background: url(../images/mobile-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  color: white;
+  position: relative;
+}
+
+.nav-section .arrow-nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.menu {
+  position: absolute;
+  top: -100%;
+  padding: 3rem 2rem 2rem;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.menu a {
+  color: black;
+  margin-right: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.menu a:hover {
+  color: #a1a1a1;
+}
+
+.close-menu ion-icon {
+  font-size: 1.8rem;
+  color: #a1a1a1;
+  position: relative;
+  top: -3px;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-btn {
+  font-size: 2rem;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+
+.arrow-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+.arrow-icon {
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-icon ion-icon {
+  font-size: 2rem;
+}
+
+.arrow-icon:hover {
+  background-color: #a1a1a1;
+}
+
+.article-information {
+  padding: 5rem 2rem;
+}
+
+.article-information h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.article-information p {
+  line-height: 2;
+  font-size: 1rem;
+  color: #a1a1a1;
+  margin-bottom: 3rem;
+}
+
+button {
+  border: none;
+  background: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+button span {
+  letter-spacing: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+button img {
+  margin-left: 3rem;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+button:hover {
+  color: #a1a1a1;
+}
+
+button:hover img {
+  position: relative;
+  left: 2rem;
+}
+
+.article-information2 {
+  padding: 5rem 2rem;
+}
+
+.article-information2 h2 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.article-information2 p {
+  line-height: 2;
+  font-size: 1rem;
+  color: #a1a1a1;
+  margin-bottom: 2rem;
+}
+
+.image-background1 {
+  background: url(../images/image-about-dark.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.image-background2 {
+  background: url(../images/image-about-light.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+/*# sourceMappingURL=styles.css.map */

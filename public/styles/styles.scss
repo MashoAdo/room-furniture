@@ -1,0 +1,185 @@
+// Import fonts from Google fonts
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+// ================REUSABLE CSS============
+
+//  Colors
+$Dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 27%);
+
+//  Typography
+$font-weight: (
+	"medium": 500,
+	"semi-bold": 600,
+	"bold": 700,
+);
+
+// MIXINS
+@mixin flexDirection($direction) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: center;
+}
+// =============BODY CSS===================
+body {
+	font-size: 12px;
+	font-family: "Spartan", sans-serif;
+}
+
+// section 1
+.section1 {
+	position: relative;
+}
+.nav-section {
+	background: url(../images/mobile-image-hero-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+	color: $White;
+	position: relative;
+	.arrow-nav {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.menu {
+	position: absolute;
+	top: -100%;
+	padding: 3rem 2rem 2rem;
+	width: 100%;
+	background-color: $White;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 1;
+
+	a {
+		color: $Black;
+		margin-right: 2rem;
+		font-weight: map-get($font-weight, "bold");
+		font-size: 1rem;
+		transition: color 0.2s ease-out;
+		&:hover {
+			color: $Dark-Gray;
+		}
+	}
+}
+.close-menu {
+	ion-icon {
+		font-size: 1.8rem;
+		color: $Dark-Gray;
+		position: relative;
+		top: -3px;
+	}
+}
+
+.logo {
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	font-size: 2rem;
+	font-weight: map-get($font-weight, "semi-bold");
+	cursor: pointer;
+}
+.menu-btn {
+	font-size: 2rem;
+	position: relative;
+	top: 2rem;
+	left: 2rem;
+}
+
+.arrow-nav {
+	@include flexDirection(row);
+	background-color: $Black;
+}
+.arrow-icon {
+	padding: 1rem;
+	transition: all 0.3s ease-in-out;
+	ion-icon {
+		font-size: 2rem;
+	}
+	&:hover {
+		background-color: $Dark-Gray;
+	}
+}
+// Article inforamation
+.article-information {
+	padding: 5rem 2rem;
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+	p {
+		line-height: 2;
+		font-size: 1rem;
+		color: $Dark-Gray;
+		margin-bottom: 3rem;
+	}
+}
+
+button {
+	border: none;
+	background: none;
+	transition: color 0.2s ease-out;
+	span {
+		letter-spacing: 0.8rem;
+		font-size: 1.3rem;
+		font-weight: map-get($font-weight, "medium");
+	}
+	img {
+		margin-left: 3rem;
+		transition: color 0.2s ease-out;
+	}
+	&:hover {
+		color: $Dark-Gray;
+	}
+	&:hover img {
+		position: relative;
+		left: 2rem;
+	}
+}
+
+// Section2
+.article-information2 {
+	padding: 5rem 2rem;
+	h2 {
+		font-size: 1rem;
+		margin-bottom: 1.5rem;
+		letter-spacing: 0.5rem;
+	}
+	p {
+		line-height: 2;
+		font-size: 1rem;
+		color: $Dark-Gray;
+		margin-bottom: 2rem;
+	}
+}
+.image-background1 {
+	background: url(../images/image-about-dark.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 350px;
+}
+.image-background2 {
+	background: url(../images/image-about-light.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+}
