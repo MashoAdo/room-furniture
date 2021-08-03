@@ -36,6 +36,7 @@ $font-weight: (
 body {
 	font-size: 12px;
 	font-family: "Spartan", sans-serif;
+	overflow-x: hidden;
 }
 
 // section 1
@@ -67,11 +68,11 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	z-index: 1;
-
+	transition: all 0.3s ease-out;
 	a {
 		color: $Black;
 		margin-right: 2rem;
-		font-weight: map-get($font-weight, "bold");
+		font-weight: map-get($font-weight, "semi-bold");
 		font-size: 1rem;
 		transition: color 0.2s ease-out;
 		&:hover {
@@ -174,7 +175,7 @@ button {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 350px;
+	height: 400px;
 }
 .image-background2 {
 	background: url(../images/image-about-light.jpg);
@@ -182,4 +183,64 @@ button {
 	background-position: center;
 	background-size: cover;
 	height: 400px;
+}
+
+// =============MEDIA QUERRIES===================
+@media screen and(min-width:700px) {
+	// SECTION 1
+	.nav-section {
+		background: url(../images/desktop-image-hero-1.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.section1 {
+		position: relative;
+		.logo {
+			position: absolute;
+			left: 2rem;
+		}
+	}
+
+	.menu-btn {
+		display: none;
+	}
+	.menu {
+		top: 0;
+		background: none;
+		a {
+			color: $White;
+			font-size: 1.3rem;
+			&:hover {
+				color: $Black;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.section1 {
+		display: grid;
+		grid-template-columns: (1fr 1fr);
+
+		.arrow-nav {
+			position: absolute;
+			right: -128px;
+			bottom: 0;
+		}
+		article {
+			padding: 7rem;
+		}
+	}
+	.logo {
+		position: relative;
+		top: 40px;
+	}
+	.section2 {
+		display: grid;
+		grid-template-columns: (1.2fr 1.5fr 1fr);
+	}
 }
