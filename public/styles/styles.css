@@ -23,7 +23,7 @@ body {
 }
 
 .nav-section {
-  background: url(../images/mobile-image-hero-1.jpg);
+  background: url(../images/desktop-image-hero-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -128,15 +128,14 @@ body {
 }
 
 .article-information h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .article-information p {
   line-height: 2;
   font-size: 1rem;
   color: #a1a1a1;
-  margin-bottom: 3rem;
 }
 
 button {
@@ -144,6 +143,7 @@ button {
   background: none;
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
+  margin-top: 4rem;
 }
 
 button span {
@@ -168,12 +168,12 @@ button:hover img {
 }
 
 .article-information2 {
-  padding: 5rem 2rem;
+  padding: 3rem;
 }
 
-.article-information2 h2 {
+.article-information2 h1 {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.5rem;
 }
 
@@ -181,7 +181,6 @@ button:hover img {
   line-height: 2;
   font-size: 1rem;
   color: #a1a1a1;
-  margin-bottom: 2rem;
 }
 
 .image-background1 {
@@ -217,8 +216,9 @@ button:hover img {
     position: absolute;
     left: 2rem;
   }
-  .menu-btn {
-    display: none;
+  .menu-btn,
+  .close-menu {
+    opacity: 0;
   }
   .menu {
     top: 0;
@@ -237,16 +237,21 @@ button:hover img {
   .section1 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
   }
   .section1 .arrow-nav {
     position: absolute;
     right: -128px;
     bottom: 0;
   }
-  .section1 article {
-    padding: 7rem;
+  article {
+    padding: 5rem;
+  }
+  article h1,
+  article p,
+  article button {
+    margin-left: 2rem;
   }
   .logo {
     position: relative;
