@@ -40,9 +40,7 @@ body {
 }
 
 // section 1
-.section1 {
-	position: relative;
-}
+
 .nav-section {
 	background: url(../images/desktop-image-hero-1.jpg);
 	background-repeat: no-repeat;
@@ -172,16 +170,16 @@ button {
 .image-background1 {
 	background: url(../images/image-about-dark.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	// background-position: center;
 	background-size: cover;
-	height: 400px;
+	height: 350px;
 }
 .image-background2 {
 	background: url(../images/image-about-light.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 400px;
+	height: 350px;
 }
 
 // =============MEDIA QUERRIES===================
@@ -208,7 +206,6 @@ button {
 	.close-menu {
 		opacity: 0;
 	}
-
 	.menu {
 		top: 0;
 		background: none;
@@ -248,5 +245,8 @@ button {
 	.section2 {
 		display: grid;
 		grid-template-columns: (1.2fr 1.5fr 1fr);
+	}
+	.article-information2 {
+		padding: 2rem;
 	}
 }
