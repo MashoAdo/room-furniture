@@ -1,7 +1,6 @@
 ### About Website
 
 This is a simple sample website landing page for a furniture selling business. The website has no external links. The left and right arrows are used to navigate to show the different mission statement of the business and the background of the menu section.
-j
 
 ### Built with
 
