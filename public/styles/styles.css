@@ -57,7 +57,7 @@ body {
 
 .menu a {
   color: black;
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-weight: 600;
   font-size: 1rem;
   -webkit-transition: color 0.2s ease-out;
